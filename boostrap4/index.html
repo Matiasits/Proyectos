@@ -21,36 +21,50 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Logo</a>
-      
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
-      
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
-
+        <a class="navbar-brand" href="#">
+          <img src="logo.jpg" alt="Logo" style="width: 40px;">
+        </a>
+              
+              <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="#demo" data-slide-to="0">Itachi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="#demo" data-slide-to="1">Kakashi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="#demo" data-slide-to="2">Pain</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Personajes
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Itachi</a>
+                <a class="dropdown-item" href="#">Kakashi</a>
+                <a class="dropdown-item" href="#">Pain</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
         <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+            <button class="btn btn-success" type="submit">Buscar</button>
         </form>
+      
       </nav>
 
       <div id="demo" class="carousel slide" data-ride="carousel">
@@ -66,20 +80,32 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="itachi.jpg" alt="Los Angeles">
+                <img class="img-fluid" src="itachi.jpg" alt="Itachi">
+                <div class="carousel-caption">
+                  <h3 class="text-white bg-dark">Itachi Huchiha</h3>
+                  <p class="text-white bg-dark">Hermano mayor de Sasuke Huchiha</p>
+                </div>
             </div>
             
             <div class="carousel-item">
-                <img src="kakashi.jpg" alt="Chicago">
+                <img class="img-fluid"  src="kakashi.jpg" alt="Kakashi">
+                <div class="carousel-caption">
+                  <h3 class="text-white bg-dark">Kakashi Hatake</h3>
+                  <p class="text-white bg-dark">Sensei de la Aldea de la Hoja</p>
+                </div>
             </div>
             
             <div class="carousel-item">
-                <img src="akatsuki.jpg" alt="New York">
+                <img class="img-fluid" src="akatsuki.jpg" alt="Pain">
+                <div class="carousel-caption">
+                  <h3 class="text-white bg-dark">Pain</h3>
+                  <p class="text-white bg-dark">"Lider" de los Akatsuki</p>
+                </div>
             </div>
 
         </div>
       
-        <!-- Left and right controls -->
+            <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
@@ -88,5 +114,54 @@
             </a>
       
       </div>
+
+      <button type="button" class="btn btn-primary btn-block my-3">CARRERAS</button> <!-- Separador -->
+
+      <div class="row mt-3 justify-content-center">
+      
+        <div class="card col-sm-6" style="width: 400px">
+          <img class="card-img-top" src="itachi.jpg" alt="Card image">
+          
+          <div class="card-body">
+            <h4 class="card-title">Itachi Huchiha</h4>
+            <p class="card-text">El mero Itachi.</p>
+            <a href="#" class="btn btn-primary">Ninja del Clan Huchiha</a>
+          </div>
+        </div>
+      
+        <div class="card col-sm-6" style="width: 400px">
+          <img class="card-img-top" src="kakashi.jpg" alt="Card image">
+          
+          <div class="card-body">
+            <h4 class="card-title">Kakashi Hatake</h4>
+            <p class="card-text">El mero Kakashi.</p>
+            <a href="#" class="btn btn-primary">Sensei de la Aldea de la Hoja</a>
+          </div>
+        
+        </div>
+
+      </div>
+
+      <button type="button" class="btn btn-primary btn-block my-3">INFORMACION</button> <!-- Separador -->
+
+      <div class="row my-3">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills col-sm-6 flex-column">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu1">Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu2">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane container active" id="menu1">Informacion de Instituto</div>
+          <div class="tab-pane container fade" id="menu2">Formulario de Contacto</div>
+        </div>
+
+      </div>
+
 </body>
 </html>
