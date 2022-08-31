@@ -24,112 +24,117 @@
         width: 100%;
         height: 100%;
       }
+      .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
       </style>
+      
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img src="imagenes/img/logo-azul.jpg" alt="Logo" style="width: 40px;">
-        </a>
-              
-              <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-              
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <!-- Links -->  
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-target="#demo" data-slide-to="0">INICIO</a>
-            </li>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center sticky-top">
 
-            <!-- Dropdown -->
-            <!--INSTITUCIONAL-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                INSTITUCIONAL
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Consejo Institucional</a>
-                <a class="dropdown-item" href="#">Cooperadora</a>
-                <a class="dropdown-item" href="#">Calendario academico</a>
-                <a class="dropdown-item" href="#">Reglamentaciones</a>
-                <a class="dropdown-item" href="#">Acuerdo Institucional</a>
-                <a class="dropdown-item" href="#">Feria de carreras</a>
-                <a class="dropdown-item" href="#">Docentes</a>
-              </div>
-            </li>
+        <ul class="navbar-nav">
+          <li class="nav-item"> <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              <img src="imagenes/img/logo-azul.jpg" alt="Logo" style="width: 50px">
+            </a>
+          </li>
+                  <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                  
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <!-- Links -->  
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-target="#demo" data-slide-to="0">INICIO</a>
+                </li>
 
-            <!--SOFTWARE-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                SOFTWARE
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Planes de estudio</a>
-                <a class="dropdown-item" href="#">Asignaturas</a>
-                <a class="dropdown-item" href="#">Horarios de clases</a>
-                <a class="dropdown-item" href="#">Inscripcion a cursadas</a>
-                <a class="dropdown-item" href="#">Fechas de exámenes</a>
-                <a class="dropdown-item" href="#">Inscripción a exámenes</a>
-                <a class="dropdown-item" href="#">Plan viejo</a>
-                <a class="dropdown-item" href="#">Soporte</a>
-                <a class="dropdown-item" href="#">Encuesta ingresantes</a>
-              </div>
-            </li>
+                <!-- Dropdown -->
+                <!--INSTITUCIONAL-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    INSTITUCIONAL
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/consejo-institucional" target="_blank">Consejo Institucional</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/cooperadora" target="_blank">Cooperadora</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/calendario-academico" target="_blank">Calendario academico</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/reglamentaciones" target="_blank">Reglamentaciones</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/acuerdo-institucional" target="_blank">Acuerdo Institucional</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/feria-de-ciencias" target="_blank">Feria de carreras</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/docentes" target="_blank">Docentes</a>
+                  </div>
+                </li>
 
-            <!--ENFERMERIA-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                ENFERMERIA
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Planes de estudio</a>
-                <a class="dropdown-item" href="#">Asignaturas</a>
-                <a class="dropdown-item" href="#">Horarios de clases</a>
-                <a class="dropdown-item" href="#">Inscripción a cursadas</a>
-                <a class="dropdown-item" href="#">Fechas de exámenes</a>
-                <a class="dropdown-item" href="#">Inscripción a exámenes - Plan Nuevo</a>
-                <a class="dropdown-item" href="#">Inscripción a exámenes - Plan Viejo</a>
-                <a class="dropdown-item" href="#">Plan viejo</a>
-              </div>
-            </li>
+                <!--SOFTWARE-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    SOFTWARE
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/plan-de-estudios" target="_blank">Planes de estudio</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/asignaturas" target="_blank">Asignaturas</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/ds-horarios-de-clases" target="_blank">Horarios de clases</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/ds-inscripcion-a-cursadas" target="_blank">Inscripcion a cursadas</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/fechas-de-examenes-ds" target="_blank">Fechas de exámenes</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/inscripcion-a-examen-ds" target="_blank">Inscripción a exámenes</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/equivalencias-del-plan-viejo" target="_blank">Plan viejo</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/soporte" target="_blank">Soporte</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/encuesta-ingresantes" target="_blank">Encuesta ingresantes</a>
+                  </div>
+                </li>
 
-            <!--ESTUDIANTES-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                ESTUDIANTES
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Régimen de alumno</a>
-                <a class="dropdown-item" href="#">Centro de estudiantes</a>
-                <a class="dropdown-item" href="#">Becas</a>
-                <a class="dropdown-item" href="#">Documentación</a>
-                <a class="dropdown-item" href="#">Equivalencias</a>
-              </div>
-            </li>
+                <!--ENFERMERIA-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    ENFERMERIA
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/plan-de-estudios" target="_blank">Planes de estudio</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/asegnaturas" target="_blank">Asignaturas</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/horarios-de-clases" target="_blank">Horarios de clases</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/inscripcion-a-cursadas" target="_blank">Inscripción a cursadas</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/fechas-de-examenes" target="_blank">Fechas de exámenes</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/inscripcion-a-examenes-2" target="_blank">Inscripción a exámenes - Plan Nuevo</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/inscripcion-a-examenes" target="_blank">Inscripción a exámenes - Plan Viejo</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/plan-viejo" target="_blank">Plan viejo</a>
+                  </div>
+                </li>
 
-            <!--INGRESO A LAS CARRERAS-->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                INGRESO A LAS CARRERAS
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Como llegar</a>
-                <a class="dropdown-item" href="#">Preinscripcion a Software</a>
-                <a class="dropdown-item" href="#">Información para ingresantes</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+                <!--ESTUDIANTES-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    ESTUDIANTES
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/estudiantes/regimen-de-alumno" target="_blank">Régimen de alumno</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/estudiantes/centro-de-estudiantes" target="_blank">Centro de estudiantes</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/estudiantes/becas" target="_blank">Becas</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/estudiantes/documentacion" target="_blank">Documentación</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/estudiantes/equivalencias" target="_blank">Equivalencias</a>
+                  </div>
+                </li>
 
-      </nav>
+                <!--INGRESO A LAS CARRERAS-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    INGRESO A LAS CARRERAS
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.google.com.ar/maps/place/Escuela+Juana+Marta+Gonzalez/@-31.4687748,-64.2195394,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a3b6144baccd:0x612d7e23e1b2be1!8m2!3d-31.4687881!4d-64.217353" target="_blank">Como llegar</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/ingreso/preinscripcion-a-software" target="_blank" >Preinscripcion a Software</a>
+                    <a class="dropdown-item" href="https://villaellibertador.itscordoba.edu.ar/index.php/ingreso/informacion-para-ingresantes" target="_blank">Información para ingresantes</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </ul>  
+    </nav>
 
       <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -158,44 +163,50 @@
 
             <div class="carousel-item">
               <img class="img-fluid mx-auto d-block" src="imagenes/img/c4.jpg" alt="c4">
-              </div>
-          </div>
-
+            </div>
         </div>
+
+      </div>
       
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+              <span class="carousel-control-prev-icon"></span>
             </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
             </a>
       
       </div>
 
       <button type="button" class="btn btn-primary btn-block my-3">CARRERAS</button> <!-- Separador -->
 
+      <!--Cartast de presentacion-->
       <div class="row mt-3 justify-content-center">
       
+      <!--CARD DE SOFTWARE-->
         <div class="card col-sm-6" style="width: 400px">
           <img class="card-img-top" src="imagenes/img/software.jpg" alt="Card image">
           
           <div class="card-body">
-            <h4 class="card-title">Software</h4>
-            <p class="card-text">software</p>
+            <h4 class="card-title">DESARROLLO DE SOFTWARE</h4>
             
             <!-- Button to Open the Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
               INFORMACION
             </button>
 
+            
             <div class="modal fade" id="myModal1">
               <div class="modal-dialog">
                 <div class="modal-content">
                 
                   <!-- Modal SOFTWARE-->
                   <div class="modal-header">
-                    <h4 class="modal-title">INFORMACION DE LA CARRERA DESARROLLO DE SOFTWARE</h4>
+                    <h4 class="modal-title">
+                      En el siguiente formulario <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrUmrh_DhWoBQpg3C-QbV0285F3B4r7IIDUQEcxXCa2u5gPQ/viewform" target="_blank"> DESARROLLO SOFTWARE </a> puedes dejarnos tus datos para poder contactarnos contigo.
+                      <br>
+                      La preinscripción a la carrera Desarrollo de Software se realiza por CIDI (ciudadano digital).
+                    </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
 
@@ -210,13 +221,14 @@
           
           </div>
         </div>
-      
+
+        <!--CARD DE ENFERMERIA-->
         <div class="card col-sm-6" style="width: 400px">
           <img class="card-img-top" src="imagenes/img/enfermeria.jpg" alt="Card image">
-          
+
           <div class="card-body">
-            <h4 class="card-title">Enfermeria</h4>
-            <p class="card-text">enfermeria</p>
+            <h4 class="card-title">ENFERMERIA</h4>
+
             <!-- Button to Open the Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
               INFORMACION
@@ -228,7 +240,18 @@
                 
                   <!-- Modal ENFERMERIA-->
                   <div class="modal-header">
-                    <h4 class="modal-title">INFORMACION DE LA CARRERA DE ENFERMERIA</h4>
+                    <h4 class="modal-title">
+                      La inscripción para 2do y 3er año de enfermería se realiza de manera presencial en los plazos establecidos por el <a href="https://villaellibertador.itscordoba.edu.ar/index.php/institucional/calendario-academico" target="_blank"> Calendario Académico</a>.
+                      <br>
+                      Documentación a presentar:
+                      <ul>
+                        <li>Fotocopia DNI</li>
+                        <li>Ficha médica actualizada (<a href="https://villaellibertador.itscordoba.edu.ar/images/certificado_unico_de_salud.pdf" target="_blank">descargar aquí</a>)</li>
+                        <li>Carnet de vacunas Actualizado</li>
+                        <li>Certificado laboral (en caso de tenerlo)</li>
+                        <li>Matrícula anual</li>
+                      </ul>
+                      </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   
@@ -253,16 +276,43 @@
         <!-- Nav pills -->
         <ul class="nav nav-pills col-sm-6 flex-column">
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#menu1">Datos</a>
+            <a class="nav-link active" data-toggle="pill" href="#menu1">DATOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#menu2">Contacto</a>
+            <a class="nav-link" data-toggle="pill" href="#menu2">CONTACTO</a>
           </li>
         </ul>
 
-        <!-- Tab panes -->
+        <!-- Tab panes INFO -->
         <div class="tab-content">
-          <div class="tab-pane container active" id="menu1">Informacion de Instituto</div>
+          <div class="tab-pane container show active" id="menu1">
+            <h4>Si prefieres, podés acercarte personalmente a nuestra sede (Escuela Marta Juana Gonzalez) en Defensa 1100. B° Villa el Libertador - de 18 a 20:30hs.</h4>
+            <h5>Documentos a presentar</h5>
+            <ul>
+              <li>Copia de DNI.</li>
+              <li>Copia de Título y analítico del secundario o constancia de estudios en trámite.</li>
+              <li>Copia de partida de nacimiento</li>
+              <li>Dos fotos 4x4</li>
+              <li>Folio que contenga la documentación</li>
+              <li>Cuota social cooperadora VOLUNTARIA</li>
+            </ul>
+            <p>
+              CONSULTÁ POR OTRAS CARRERAS EN LA PÁGINA DEL INSTITUTO
+              <br>
+              <a href="http://www.institutotecnicocordoba.com/" target="_blank">http://www.institutotecnicocordoba.com/</a>
+              <br>
+              TODAS LAS CARRERAS
+            </p>
+            <h5>Documentacion para inscripcion definitiva</h5>
+            <p>Además de la documentación solicitada se le requerirá para la inscripción definitiva, la ficha médica completa [<a href="https://villaellibertador.itscordoba.edu.ar/images/certificado_unico_de_salud.pdf" target="_blank">Descargar archivo</a>] y el analítico definitivo, si debía materias del secundario.</p>
+
+            <h5>Mayores de 25 sin título de secundario</h5>
+            <p>
+              La Ley de Educación Superior contempla la posibilidad que, quienes se desempeñen laboralmente a una area afin a la carrera en la que se quieren inscribir y hayan termiando la escuela primaria, pueden hacerlo si aprueban un exámen de idoneidad.
+              <br><br>
+              Consultar al momento de la inscripción
+            </p>
+          </div>
           
           <div class="tab-pane container fade" id="menu2">
             
@@ -294,36 +344,8 @@
                 <label for="comment">Comentarios (opcional):</label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
               </div>
-
-              <p>Cargue un archivo PDF que contenga:</p>
-                <ul> 
-                  <li>
-                    Copia de DNI
-                  </li>
-                  <li>
-                    Copia de Título y analítico del secundario o constancia de estudios en trámite,
-                  </li>
-                  <li>
-                    Copia de partida de nacimiento:
-                  </li>  
-                </ul>
-              
-              <input type="file" id="myFile" name="filename2" value="Cargar archivo">
-            
-              <div class="mt-3">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
             
             </form>
-
-            <script>
-              // Add the following code if you want the name of the file appear on select
-              $(".custom-file-input").on("change", function() {
-                var fileName = $(this).val().split("\\").pop();
-                $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-              });
-            </script>
-              
 
           </div>
         </div>
